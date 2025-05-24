@@ -1,0 +1,298 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Guide Complet - E-commerce Gaming Futuriste Next.js
+
+Supergaming : Magasin de jouets / Electro - Gaming
+
+Situé à Dakar
+
+## 🎯 Brand Identity & Vision
+
+### Vision de la Marque
+**"L'avenir du gaming, aujourd'hui"**
+
+Une boutique e-commerce gaming ultra-moderne qui combine esthétique cyberpunk rouge/noir et technologie de pointe pour créer une expérience d'achat immersive et futuriste.
+
+### Personnalité
+- **Moderne** : Design cutting-edge, interfaces fluides
+- **Rebelle** : Rouge cyber, typographie audacieuse  
+- **Tech-savvy** : Innovation, performance, précision
+- **Accessible** : Gaming pour tous, communauté inclusive
+
+---
+
+## 🎨 Palette de Couleurs & Design System
+
+### Couleurs Primaires
+- **Rouge Principal** : #FF0033 (Cyber Red)
+- **Rouge Hover** : #E6002E
+- **Rouge Sombre** : #CC0029
+- **Noir Principal** : #0A0A0A (Deep Black)
+- **Noir Secondaire** : #1A1A1A (Card Black)
+- **Noir Tertiaire** : #2A2A2A (Border Black)
+
+### Couleurs d'Accent Futuristes
+- **Cyan** : #00FFFF
+- **Electric Blue** : #0080FF
+- **Neon Pink** : #FF0080
+- **Warning Orange** : #FF6B00
+- **Success Green** : #00FF88
+
+### Typographie Futuriste
+1. **Orbitron** - Logo et titres principaux (sci-fi aesthetic)
+2. **Exo 2** - Navigation et sous-titres (moderne, dynamique)
+3. **Inter** - Corps de texte (lisibilité optimale)
+4. **JetBrains Mono** - Prix et éléments techniques
+
+### Effets Visuels Signature
+- **Gradients** : Rouge vers rouge-hover, noir profond vers card-black
+- **Glows** : Effets de lueur rouge sur hover et focus
+- **Animations** : Pulse, neon-flicker, slide-in, glow effects
+- **Shadows** : Box-shadows avec teintes rouges
+
+---
+
+## 🛠️ Stack Technique Complète
+
+### Framework & Core
+- **Next.js 14+** avec App Router et TypeScript
+- **React 18+** avec hooks modernes
+- **TypeScript** pour le typage strict
+
+### Styling & UI
+- **Tailwind CSS** avec configuration personnalisée rouge/noir
+- **shadcn/ui** pour les composants de base
+- **Framer Motion** pour les animations cyberpunk fluides
+- **Lucide React** + **React Icons** pour iconographie
+
+### State & Utils
+- **Zustand** avec persistance pour gestion du panier
+- **React Hook Form** + **Zod** pour validation
+- **clsx** + **tailwind-merge** pour classes conditionnelles
+
+---
+
+## 📋 Feuille de Route Détaillée
+
+### **Phase 1 : Setup & Brand Foundation (Semaine 1-2)**
+
+#### Objectifs
+- Configuration complète de l'environnement Next.js
+- Intégration des fonts Google (Orbitron, Exo 2, Inter, JetBrains Mono)
+- Setup Tailwind avec palette de couleurs cyberpunk
+- Configuration shadcn/ui avec customisations brand
+
+#### Livrables
+- Projet Next.js configuré avec TypeScript
+- Tailwind config avec couleurs et animations cyberpunk
+- Fonts intégrées et classes CSS globales
+- Structure de dossiers complète
+- Premier commit avec brand guidelines appliquées
+
+#### Structure de Projet
+```
+/src
+  /app (App Router Next.js 14)
+    /globals.css (styling cyberpunk)
+    /layout.tsx (fonts et structure)
+    /page.tsx (homepage)
+  /components
+    /ui (shadcn customisé)
+    /layout (header, footer, nav)
+    /product (cards, grids, galeries)
+    /cart (panier, items, summary)
+    /common (search, loading, etc.)
+  /hooks, /lib, /store, /data
+```
+
+### **Phase 2 : Layout & Navigation Cyberpunk (Semaine 2-3)**
+
+#### Header Futuriste
+- Logo avec effet glow et animation
+- Navigation avec backdrop blur et effets hover
+- Search bar intégrée avec style cyber
+- Icône panier avec compteur animé
+- Menu mobile avec drawer effects
+
+#### Navigation & UX
+- Menu catégories avec hover effects
+- Breadcrumb avec style futuriste
+- Footer avec sections organisées et liens sociaux
+- Responsive design mobile-first
+
+#### Animations & Micro-interactions
+- Transitions fluides entre pages
+- Hover effects sur tous les éléments interactifs
+- Loading states avec spinners cyberpunk
+- Scroll animations avec Framer Motion
+
+### **Phase 3 : Homepage & Catalogue (Semaine 3-4)**
+
+#### Homepage Impactante
+- Hero section full-screen avec gradient overlay
+- Titre principal avec effet glow et neon-flicker
+- CTA principal avec hover lift effect
+- Section produits vedettes avec grid responsive
+- Bannières promotionnelles avec style cyberpunk
+
+#### Catalogue de Produits
+- Grid responsive avec cards optimisées
+- Filtres avancés (catégorie, prix, marque)
+- Système de recherche en temps réel
+- Pagination avec style futuriste
+- Tri par popularité, prix, nouveautés
+
+#### Product Cards Design
+- Layout avec image, titre, prix, actions
+- Hover effects : lift, glow, scale image
+- Overlay avec boutons d'action (panier, favoris)
+- Badge "Nouveau" ou "Promo" avec style néon
+- Animation d'apparition au scroll
+
+### **Phase 4 : Pages Produit & Détails (Semaine 4-5)**
+
+#### Page Produit Individuelle
+- Galerie d'images avec zoom et navigation
+- Informations détaillées avec typography hiérarchisée
+- Prix avec style JetBrains Mono et mise en valeur
+- Boutons d'action (Ajouter au panier, Favoris)
+- Section avis et évaluations
+- Produits similaires en suggestion
+
+#### Features Avancées
+- Galerie d'images avec lightbox
+- Variations produit (couleur, taille) si applicable
+- Stock indicator avec style cyberpunk
+- Partage social avec icônes modernes
+- Breadcrumb pour navigation
+
+### **Phase 5 : Système de Panier & WhatsApp (Semaine 5-6)**
+
+#### Panier Sophistiqué
+- Sidebar cart avec animations slide-in
+- Items avec images, quantités, prix
+- Calcul automatique des totaux
+- Modifications inline (quantité, suppression)
+- Bouton "Vider le panier" avec confirmation
+
+#### Intégration WhatsApp
+- Bouton principal "Commander via WhatsApp"
+- Génération automatique du message formaté
+- Récapitulatif élégant avant envoi
+- Informations client (nom, adresse, téléphone)
+- Prévisualisation du message WhatsApp
+
+#### État du Panier
+- Persistance locale avec Zustand
+- Synchronisation entre onglets
+- Indicateurs visuels (badges, compteurs)
+- Animations lors des modifications
+
+### **Phase 6 : Search, Filtres & UX (Semaine 6-7)**
+
+#### Recherche Avancée
+- Search bar avec suggestions en temps réel
+- Résultats avec highlighting des termes
+- Filtres combinables (catégorie + prix + marque)
+- Page de résultats avec pagination
+- "Aucun résultat" avec suggestions alternatives
+
+#### Optimisations UX
+- Loading states avec skeletons cyberpunk
+- Error boundaries avec messages stylés
+- 404 page avec navigation de retour
+- Optimisation mobile et responsive
+- Accessibility (contraste, navigation clavier)
+
+### **Phase 7 : Performance & Polish (Semaine 7-8)**
+
+#### Optimisations Techniques
+- Images optimisées avec next/image
+- Lazy loading des composants lourds
+- Bundle analysis et optimisation
+- SEO avec métadonnées dynamiques
+- Sitemap automatique
+
+#### Testing & QA
+- Tests responsive sur tous devices
+- Validation des flux utilisateur
+- Tests de performance (Lighthouse)
+- Validation des liens WhatsApp
+- Cross-browser compatibility
+
+#### Deploy & Monitoring
+- Configuration Vercel avec domaine personnalisé
+- Variables d'environnement
+- Analytics integration
+- Error monitoring
+- Performance monitoring
+
+---
+
+## 🎨 Guidelines d'Application Brand
+
+### Logo & Typography
+- Logo principal : "CYBER" + "GAME" en rouge
+- Titres : Orbitron bold avec espacement large
+- Navigation : Exo 2 uppercase avec tracking
+- Prix : JetBrains Mono rouge avec emphasis
+
+### Composants Signature
+- **Boutons** : Gradient rouge, hover lift + glow
+- **Cards** : Background noir gradient, border rouge au hover
+- **Inputs** : Style cyberpunk avec focus glow
+- **Modals** : Backdrop blur avec borders néon
+
+### Animations Cohérentes
+- **Hover** : Scale, lift, glow effects
+- **Entrée** : Slide-in, fade-in avec stagger
+- **Loading** : Pulse rouge, spinners futuristes
+- **Transitions** : Durée 300ms, easing smooth
+
+### Responsive Strategy
+- **Mobile** : Navigation drawer, cards stack
+- **Tablet** : Grid 2-3 colonnes, navigation horizontale
+- **Desktop** : Grid 4+ colonnes, sidebar filters
+- **Ultra-wide** : Conteneurs max-width avec centering
+
+---
+
+## 🎯 Objectifs de Performance
+
+### Metrics Cibles
+- **Lighthouse Score** : >90 (Performance, Accessibility, SEO)
+- **Core Web Vitals** : Tous en vert
+- **Bundle Size** : <500KB initial load
+- **Image Optimization** : WebP, lazy loading, responsive
+
+### SEO & Marketing
+- Métadonnées optimisées par page
+- Schema markup pour produits
+- Sitemap XML automatique
+- Open Graph pour partage social
+- Analytics et conversion tracking
+
+---
+
+## ✨ Do's & Don'ts de la Marque
+
+### ✅ À FAIRE
+- Maintenir l'équilibre rouge/noir 80/20
+- Utiliser les animations avec subtilité
+- Respecter la hiérarchie typographique
+- Optimiser pour mobile en priorité
+- Tester l'accessibilité (contraste, navigation)
+
+### ❌ À ÉVITER
+- Surcharger avec trop d'effets visuels
+- Négliger les performances pour l'esthétique
+- Mélanger trop de couleurs d'accent
+- Utiliser Orbitron pour de longs textes
+- Oublier les états de loading et d'erreur
+
+---
+
+*Guide Complet v1.0 - E-commerce Gaming Futuriste*
